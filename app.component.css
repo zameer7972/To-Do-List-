@@ -1,0 +1,16 @@
+ .daily{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+ }
+ .container{
+    margin: 10px;
+ }
+.list{
+   font-weight: 900;
+}
+#btnlist:active{
+    background-color: grey;
+}
+ 

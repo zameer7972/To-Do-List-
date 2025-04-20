@@ -1,0 +1,12 @@
+<h1 style="text-align: center; border: 2px solid black; border-radius: 10px; background-color: black; color: white;">To-Do List</h1>
+<div style="text-align: center;">
+<input class="container" type="text" [(ngModel)]= "task" value="Enter a Task" style="width: 400px; height: 20px; border-radius: 5px;">
+<button (click)="addDetails()" id="btnlist" style="height: 25px;">Add Task</button>
+</div>
+@for(item of taskList; track item.task){
+    <ul class="daily">
+        <li class="list">{{item.id}}</li>
+        <li class="list">{{item.task}}</li>
+        <li><button (click)="deleteItem(item.id)">Delete</button></li>
+    </ul>
+}
